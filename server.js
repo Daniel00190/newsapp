@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
   res.send('Hello, Express.js backend!');
 });
 
-async function fetchNewsData(apiKey, language, additionalParams, res, maxApiCall = 7) {
+async function fetchNewsData(apiKey, language, additionalParams, res, maxApiCall = 8) {
   let newsAPIUrl = `https://newsdata.io/api/1/news?apikey=${apiKey}&language=${language}&${additionalParams}`;
   let allData = [];
   let apiCallCount = 1;
